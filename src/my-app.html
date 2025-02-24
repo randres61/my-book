@@ -1,19 +1,6 @@
-<template>
-    <require from="./book-list"></require>
-    <h1>Add Book</h1>
-  
-    <form submit.trigger="addBook()">
-  
-      <label for="book-title"></label>
-  
-      <input value.bind="bookTitle"
-          id="book-title"
-          type="text"
-          placeholder="book title...">
-  
-      <input type="submit" value="add" >
-      <hr/>
-      <book-list books.bind="books"></book-list>
-    </form>
-</template>
+<!-- Two routes using the load attribute containing the path of the route -->
+<a load="/">Home</a>
+
+<!-- This is where our routed components are loaded -->
+<au-viewport  name="main"></au-viewport>
   
