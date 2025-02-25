@@ -22,4 +22,13 @@ export default defineConfig({
     babel(),
     nodePolyfills(),
   ],
+  resolve: {
+    alias: {
+      // Asegúrate de que jQuery se resuelva correctamente
+      'jquery': 'jquery/dist/jquery.slim.js',
+    },
+  },
+  optimizeDeps: {
+    include: ['bootstrap', 'jquery', '@popperjs/core'],
+  },
 });

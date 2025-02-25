@@ -1,6 +1,15 @@
-<!-- Two routes using the load attribute containing the path of the route -->
-<a load="/">Home</a>
+<template>
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">
+                <a load="/" class="text-decoration-none text-reset"><span class="brand-highlight">my</span>-books</a>
+            </h3>
+        </div>    
 
-<!-- This is where our routed components are loaded -->
-<au-viewport  name="main"></au-viewport>
-  
+        <!-- This is where our routed components are loaded -->
+        <au-viewport  name="main"></au-viewport>
+        <footer class="footer">
+            <p>Aurlia Demo 2025</p>
+        </footer>
+    </div>
+</template>
